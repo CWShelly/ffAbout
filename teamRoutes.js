@@ -1,2 +1,2 @@
-page('/', teamController.loadAll, teamController.index);
+page('/', mainController.loadAll, mainController.index);
 page();

@@ -2,7 +2,7 @@
 
   var teamController ={};
   teamController.index = function(){
-    console.log('x');
+  console.log('team controller');
 
   };
   module.teamController = teamController;

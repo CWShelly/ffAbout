@@ -1,0 +1,24 @@
+{
+  "name": "ffabout",
+  "version": "1.0.0",
+  "description": "test for about ff",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CWShelly/ffAbout.git"
+  },
+  "author": "s yusuf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CWShelly/ffAbout/issues"
+  },
+  "homepage": "https://github.com/CWShelly/ffAbout#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "express-request-proxy": "^1.1.0"
+  }
+}

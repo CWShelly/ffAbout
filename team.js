@@ -6,6 +6,7 @@
   }
 
   Team.all = [];
+
 //
 // Team.prototype.toHtml = function(){
 //   var template = Handlebars.compile($('#about-template').text());
@@ -115,7 +116,11 @@
   );
   };
 
-  // Team.createTable();
+Team.with = function(attr){
+  return Team.all.filter(function(teams){
+    return teams[attr];
+  });
+};
 
   module.Team = Team;
 })(window);

@@ -2,11 +2,14 @@
 var mainController ={};
 
 Team.createTable();
+
   mainController.index = function(ctx, next){
-  teamView.initAboutPage(ctx.articles);
+    console.log('mainController.index');
+    teamView.index(ctx.articles);
 };
 
 mainController.loadAll = function(ctx, next){
+  console.log('loadall');
   var teamData = function(allArticles){
     ctx.articles = Team.all;
     next();
@@ -14,6 +17,7 @@ mainController.loadAll = function(ctx, next){
 
  if(Team.all.length){
    ctx.articles = Team.all;
+   console.log(Team.all);
    next();
  } else{
    Team.fetchAll(teamData);
